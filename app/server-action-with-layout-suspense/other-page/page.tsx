@@ -12,7 +12,7 @@ export default function Page() {
 
   return (
     <>
-      <Suspense fallback={<p>Loading...</p>}>
+      <Suspense fallback={<p>Loading in page...</p>}>
         <SomeComponentWithDataFetching sleepTime={2500}>
           <p>Other page</p>
           <p>{Date.now()}</p>

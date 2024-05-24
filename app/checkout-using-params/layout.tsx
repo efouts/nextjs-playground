@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import CheckoutSummary from "@/components/checkout-summary";
+import Link from "next/link";
 
 export default function CheckoutLayout({
   children,
@@ -8,6 +9,7 @@ export default function CheckoutLayout({
 }>) {
   return (
     <>
+      <Link href="/">Home</Link>
       {children}
       <Suspense fallback={<p>Loading summary...</p>}>
         <CheckoutSummary />
