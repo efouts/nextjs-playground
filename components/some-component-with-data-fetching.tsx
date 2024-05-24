@@ -4,9 +4,11 @@ function sleep(ms: number) {
 
 export default async function SomeComponentWithDataFetching({
   children,
+  sleepTime,
 }: {
   children: React.ReactNode;
+  sleepTime: number;
 }) {
-  await sleep(1000);
+  await sleep(sleepTime);
   return <>{children}</>;
 }

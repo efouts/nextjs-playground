@@ -7,7 +7,7 @@ function sleep(ms: number) {
 export const dynamic = "force-dynamic";
 
 const CheckoutSummary: React.FC = async () => {
-  await sleep(10000);
+  await sleep(5000);
   return <p>Checkout summary</p>;
 };
 

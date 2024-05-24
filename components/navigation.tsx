@@ -16,6 +16,7 @@ const Navigation: React.FC<{
           <Link
             className={`link ${pathname === link.path ? "active" : ""}`}
             href={link.path}
+            prefetch={false}
           >
             {link.label}
           </Link>
