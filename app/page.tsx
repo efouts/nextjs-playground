@@ -13,6 +13,21 @@ export default function Page() {
           Server action with template suspense
         </Link>
       </p>
+      <p>
+        <Link href="/route-handler-with-layout-suspense/page">
+          Route handler with layout suspense
+        </Link>
+      </p>
+      <p>
+        <Link href="/server-action-with-layout-without-form/page">
+          Server action with layout suspense without form
+        </Link>
+      </p>
+      <p>
+        <Link href="/server-action-with-layout-same-page/page?page=page">
+          Server action with layout suspense with same page
+        </Link>
+      </p>
     </>
   );
 }
